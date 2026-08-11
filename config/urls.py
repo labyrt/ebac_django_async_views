@@ -16,8 +16,9 @@ Including another URLconf
 """
 from django.urls import path
 
-from .views import home
+from .views import async_view, home
 
 urlpatterns = [
     path('', home, name='home'),
+    path('async/', async_view, name='async-view'),
 ]
